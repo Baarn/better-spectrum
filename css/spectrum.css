@@ -1,3 +1,4 @@
+
 /* Global----------------
 */
 .member-avatar .avatar {
@@ -7,6 +8,7 @@
 .message-item.highlighted .member-avatar .avatar {
     border: 1px solid;
 }
+
 
 /* SIDEBAR -----------------
 */
@@ -18,7 +20,7 @@
 /* FORUMS  -----------------
 */
 
-/* board view
+/* BOARD VIEW
 */
 
 
@@ -32,11 +34,23 @@
     width: 0px;
 }
 
+.theme-dark #page.forum-channel .row:not(:last-child) {
+    border-bottom: none;
+}
+
+.theme-dark #page.forum-channel .row.thread:not(.unread) {
+    background: inherit;
+}
+
+/* reorder the thread table columns */
 #page.forum-channel .row .column.vote {
-    order: -1;
+    order: -2;
     min-width: 40px;
 }
 
+
+
+/* make the vote buddon cute */
 #page.forum-channel button.vote {
     padding: 0px;
     width: 30px;
@@ -48,7 +62,40 @@
     margin-top: 6px;
 }
 
-/* thread view
+/* hide the preview pic border */
+#page.forum-channel .row .column.subject .subject-media-preview {
+    border: none;
+}
+/* downsize and slight recolor of preview pic */
+#page.forum-channel .row .column.subject .subject-media-preview .default-preview {
+    height:60%;
+    filter: grayscale(40%);
+}
+
+
+/* move subject text up a bit */
+#page.forum-channel .row .column.subject .subject-content {
+    align-self: auto;
+}
+/* downsize author text */
+#page.forum-channel .row .column.subject .subject-content .subject-content-footer {
+    font-size: .7rem;
+}
+#page.forum-channel .row .column.subject .subject-content .thread-flag {
+    margin-bottom: 0px;
+}
+
+#page.forum-channel .row .column.subject .subject-content .thread-subject {
+    margin-bottom: 0px;
+}
+
+#page.forum-channel .row .column.subject .new-replies-link {
+    margin: 0px 4px 0px;
+    border: none;
+}
+
+
+/*THREAD VIEW
 */
 
 #page.forum-thread .content-block.text {
