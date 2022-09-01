@@ -34,7 +34,12 @@
     border: none;
 }
 
-#app #app-header {
+.theme-dark#app {
+    background-color: var(--main-color);
+}
+
+.theme-dark#app #app-header {
+    background-color: var(--main-color);
     height: 0px;
 }
 #app #app-content {
@@ -44,7 +49,7 @@
 
 .nickname {
     font-family: Roboto,sans-serif;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .member-avatar .avatar {
@@ -63,16 +68,37 @@
 
 /* SIDEBAR -----------------
 */
-#sidebar{
+.theme-dark .c-sidebar-header {
+    background-color: var(--dark-gray);
+}
+
+.theme-dark #sidebar{
+    background-color: var(--dark-gray);
     padding-top: 5px;
 }
 .sidebar-list .sidebar-item {
     padding: 2px 2px;
 }
+.theme-dark .l-sidebar__body {
+    background-color: var(--darker-gray);
+}
+.theme-dark .c-sidebar-navigation {
+    background-color: var(--dark-gray);
+}
+.theme-dark .l-sidebar__footer {
+    background-color: var(--light-gray);
+}
+.theme-dark .c-sidebar-list-body::after {
+    border: none;
+}
+
+
+
 
 
 /* FORUMS  -----------------
 */
+
 
 /* BOARD VIEW
 */
@@ -212,8 +238,12 @@
 }
 
 
+
 /*THREAD VIEW
 */
+
+
+
 .theme-dark .forum-thread-item > .content .forum-thread-subject {
     font-weight: 500;
     font-size: 1.75rem;
@@ -337,8 +367,50 @@ button.vote.vertical {
     margin-left: 4px;
 }
 
+
+
+
+
 /* CHAT --------------------
 */
+
+
+
+
+#app.theme-dark #app-content #page.lobby #page-main .lobby-header {
+    border: none;
+    background: var(--main-color);
+}
+#app.theme-dark #app-content #page.lobby #page-main .messages-list {
+    background: var(--main-color);
+}
+.theme-dark .message-item > .content > .bottom .body {
+    background: transparent;
+    color: var(--font-main);
+}
+.theme-dark .message-item.status-default:not(.edit-mode).reaction-open, .theme-dark .message-item.status-default:not(.edit-mode):active, .theme-dark .message-item.status-default:not(.edit-mode):hover {
+    background: var(--dark-gray);
+}
+#app.theme-dark #app-content #page.lobby .lobby-footer {
+    background: var(--dark-gray);
+    color: var(--font-main);
+}
+#app.theme-dark #app-content #page.lobby .lobby-footer > .top {
+    background: var(--dark-gray);
+    color: var(--font-main);
+}
+#app.theme-dark #app-content #page.lobby .lobby-footer > .message-input {
+    background: var(--dark-gray);
+    padding-top: 0px;
+}
+.theme-dark .message-input .message-row > .input {
+    background: var(--main-color);
+}
+.theme-dark .message-input .message-row > .input .draft-extend {
+    color: var(--font-main);
+}
+
+
 /* chat messages
 */
 .message-item {
@@ -365,5 +437,7 @@ button.vote.vertical {
     max-width: 60rem;
 }
 .lobby-message__wrapper {
+    background: var(--darker-gray);
     padding: 6px 6px;
 }
+
