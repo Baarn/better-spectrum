@@ -2,6 +2,8 @@
     --main-color:#262626;
     --main-transparent: rgba(38,38,38,.7);
     --light-gray:#404040;
+    --main-darker: #222222;
+    --shadow:#202020;
     --dark-gray:#161616;
     --darker-gray:#121212;
     
@@ -46,6 +48,23 @@
     height: 100%;
 }
 
+.theme-dark .reaction {
+    border-color: var(--shadow);
+    background-color: var(--shadow);
+    color: var(--font-main);
+}
+.theme-dark .reaction:hover:not(.no-border) {
+    border-color: var(--light-gray);
+}
+.theme-dark .reaction .count {
+    color: var(--font-main);
+}
+.theme-dark .reactions .reactions-expand .icon use {
+    fill: var(--font-main);
+}
+.theme-dark .reaction-add .reaction .icon > use {
+    fill: var(--font-main);
+}
 
 .nickname {
     font-family: Roboto,sans-serif;
@@ -401,7 +420,7 @@ button.vote.vertical {
     color: var(--font-main);
 }
 .theme-dark .message-item.status-default:not(.edit-mode).reaction-open, .theme-dark .message-item.status-default:not(.edit-mode):active, .theme-dark .message-item.status-default:not(.edit-mode):hover {
-    background: var(--dark-gray);
+    background: var(--main-darker);
 }
 #app.theme-dark #app-content #page.lobby .lobby-footer {
     background: var(--dark-gray);
@@ -421,7 +440,46 @@ button.vote.vertical {
 .theme-dark .message-input .message-row > .input .draft-extend {
     color: var(--font-main);
 }
-
+.theme-dark .message-media {
+    border-color: var(--dark-gray);
+}
+.theme-dark .message-media > .handle {
+    background: var(--dark-gray);
+}
+.theme-dark .message-media > .handle > .provider:hover {
+    background: var(--light-gray);
+    color: var(--font-main);
+}
+.theme-dark .message-media-rich, .theme-dark .message-media figure {
+    background: var(--dark-gray);
+}
+.theme-dark .message-item.status-default:not(.edit-mode).reaction-open .message-media .handle, .theme-dark .message-item.status-default:not(.edit-mode).reaction-open .message-media .message-media-rich, .theme-dark .message-item.status-default:not(.edit-mode).reaction-open .message-media figure, .theme-dark .message-item.status-default:not(.edit-mode):active .message-media .handle, .theme-dark .message-item.status-default:not(.edit-mode):active .message-media .message-media-rich, .theme-dark .message-item.status-default:not(.edit-mode):active .message-media figure, .theme-dark .message-item.status-default:not(.edit-mode):hover .message-media .handle, .theme-dark .message-item.status-default:not(.edit-mode):hover .message-media .message-media-rich, .theme-dark .message-item.status-default:not(.edit-mode):hover .message-media figure {
+    background: var(--darker-gray);
+}
+.theme-dark .public-DraftEditor-content pre, .theme-dark pre {
+    background: var(--light-gray);
+    border: none;
+    color: var(--font-main);
+}
+.theme-dark .message-item > .actions .btn {
+    border-color: var(--shadow);
+    background-color: var(--shadow);
+    color: var(--font-main);
+}
+.theme-dark .message-item > .actions .btn:hover:not(.delete):only-child {
+    border-right-color: var(--light-gray);
+}
+.theme-dark .message-item > .actions .btn:hover:not(.delete) {
+    border-color: var(--light-gray);
+    background-color: var(--shadow);
+    color: var(--font-main);
+}
+.theme-dark .message-item > .actions .btn .icon use {
+    fill: var(--font-main);
+}
+.theme-dark .message-item > .actions .btn:hover .icon use {
+    fill: var(--font-main);
+}
 
 /* chat messages
 */
