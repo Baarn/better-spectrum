@@ -36,6 +36,15 @@
     border: none;
 }
 
+.theme-dark .errorFallback {
+    background-color: var(--main-color);
+    color: var(--font-main);
+}
+.theme-dark .errorFallback-message {
+    color: var(--font-main);
+    filter: grayscale(100%) brightness(1.36); /* colormatch the image cause for some reason it doesn't have transparent background */
+}
+
 .theme-dark#app {
     background-color: var(--main-color);
 }
