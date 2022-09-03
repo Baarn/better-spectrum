@@ -28,12 +28,15 @@
     background-color: var(--main-color);
 }
 .theme-dark #page #page-main .page-header .page-header-inner {
-    background-color: var(--light-gray);
+    background-color: var(--dark-gray);
     border: none;
 }
 .theme-dark .breadcrumb {
     background-color: var(--main-color);
     border: none;
+}
+.theme-dark #page #page-main .page-header .page-header-inner .actions .action {
+    background-color: var(--main-color);
 }
 
 .theme-dark .errorFallback {
@@ -138,6 +141,21 @@
 
 /* FORUMS  -----------------
 */
+
+
+/* COMMUNITY PAGE */
+
+.theme-dark #app-content > #page.community > #page-main .community-list {
+    background-color: var(--main-color);
+}
+.theme-dark #app-content > #page.community > #page-main .community-list h3 {
+    background-color: var(--light-gray);
+}
+
+.theme-dark  .messages-loading {
+    background-color: var(--light-gray);
+}
+
 
 
 /* BOARD VIEW
