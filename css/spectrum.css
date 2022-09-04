@@ -2,6 +2,7 @@
     --main-color:#262626;
     --main-transparent: rgba(38,38,38,.7);
     --light-gray:#404040;
+    --lighter-gray:#444444;
     --main-darker: #222222;
     --shadow:#202020;
     --dark-gray:#161616;
@@ -38,6 +39,12 @@
 .theme-dark #page #page-main .page-header .page-header-inner .actions .action {
     background-color: var(--main-color);
 }
+.theme-dark #page #page-main .page-header .page-header-inner .actions .action.on {
+    background-color: var(--light-gray);
+}
+.theme-dark #page #page-main .page-header .page-header-inner .actions .action.on:hover {
+    background-color: var(--lighter-gray);
+}
 
 .theme-dark .errorFallback {
     background-color: var(--main-color);
@@ -47,6 +54,8 @@
     color: var(--font-main);
     filter: grayscale(100%) brightness(1.36); /* colormatch the image cause for some reason it doesn't have transparent background */
 }
+
+
 
 .theme-dark#app {
     background-color: var(--main-color);
@@ -133,9 +142,24 @@
     left: 2px;
 }
 .theme-dark .sidebar-list .sidebar-item > .column.drag-handle > svg.icon {
-
     color: var(--font-main);
 }
+
+
+
+
+
+
+
+/* QUICK ACCESS BAR */
+
+
+
+
+
+
+
+
 
 
 
