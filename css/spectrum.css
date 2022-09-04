@@ -153,14 +153,46 @@
 
 /* QUICK ACCESS BAR */
 
+aside.quick-access {
+    margin: 0px;
+}
 
+.theme-dark .quick-access {
+    background-color: var(--main-color);
+    border: none;
+}
 
+.theme-dark .quick-access-header {
+    background-color: var(--light-gray);
+}
+#app.theme-dark #app-content .quick-access .lobby-member-presences .search {
+    background-color: var(--main-color);
+}
+#app.theme-dark #app-content .quick-access .lobby-member-presences {
+    background-color: var(--dark-gray);
+}
 
+.theme-dark .search-panel .advanced-search {
+    background-color: var(--main-color);
+    border: none;
+}
+.theme-dark #search-results .results-list {
+    background-color: var(--dark-gray);
+    border: none;
+}
+.theme-dark #notifications .notifications-main .notifications-list, .theme-dark #notifications .notifications-main .notifications-list .notifications-item {
+    background-color: var(--main-color);
+}
 
-
-
-
-
+.theme-dark .search-panel .quick-access-header-input input {
+    background-color: var(--darker-gray);
+}
+.theme-dark .search-panel .quick-access-header-input button {
+    background-color: var(--dark-gray);
+}
+.theme-dark .search-panel .quick-access-header-input button:hover {
+    background-color: var(--main-color);
+}
 
 
 /* FORUMS  -----------------
