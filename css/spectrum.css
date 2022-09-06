@@ -38,6 +38,7 @@
 }
 .theme-dark #page #page-main .page-header .page-header-inner .actions .action {
     background-color: var(--main-color);
+    border-color: var(--dark-gray);
 }
 .theme-dark #page #page-main .page-header .page-header-inner .actions .action.on {
     background-color: var(--light-gray);
