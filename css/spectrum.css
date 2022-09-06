@@ -15,6 +15,9 @@
 }
 
 
+
+
+
 /* Global----------------
 */
 
@@ -119,6 +122,9 @@
 }
 
 
+.theme-dark .react-tooltip {
+    background-color: var(--main-color) !important; 
+}
 
 
 
@@ -164,7 +170,12 @@
 }
 
 
-
+.theme-dark .l-sidebar__tooltip.type-dark {
+    background-color: var(--main-color);
+}
+.theme-dark .l-sidebar__tooltip.place-right.l-sidebar__tooltip::after {
+    border-right-color: var(--main-color);
+}
 
 
 
