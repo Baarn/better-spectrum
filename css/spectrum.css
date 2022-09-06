@@ -59,6 +59,10 @@
     filter: grayscale(100%) brightness(1.36); /* colormatch the image cause for some reason it doesn't have transparent background */
 }
 
+/* loading bar, near impossible to catch */
+#app.theme-dark #app-content #page.lobby #page-main .messages-list .messages-loading {
+    background: var(--main-darker);
+}
 
 
 .theme-dark#app {
