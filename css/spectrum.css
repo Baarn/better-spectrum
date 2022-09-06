@@ -309,7 +309,13 @@ aside.quick-access {
 .theme-dark .list-navigator .widgets .navigation .navigation-content {
     background-color: var(--main-transparent);
 }
-
+.theme-dark .list-navigator .widgets button.action {
+    border: none;
+    background-color: var(--dark-gray);
+}
+.theme-dark .list-navigator .widgets button.action:hover {
+    background-color: var(--light-gray);
+}
 
 
 #page.forum-channel .row .column {
@@ -444,12 +450,14 @@ aside.quick-access {
 }
 
 .theme-dark #page.forum-thread .page-content .forum-thread .forum-thread-header .thread-control-bar {
-    background-color: inherit;
+    background-color: transparent;
     padding: 2px 2px 2px 20px;
     margin-top: 0px;
     justify-content: right;
 }
-
+.theme-dark #page.forum-thread .page-content .forum-thread .forum-thread-empty {
+    background-color: var(--dark-gray);
+}
 
 
 
@@ -520,6 +528,28 @@ button.vote.vertical {
     border-color: var(--light-gray);
 }
 
+.theme-dark .thread-flag.thread-flag-label {
+    background-color: var(--light-gray);
+}
+.theme-dark .thread-flag.thread-flag-label:hover {
+    background-color: var(--main-darker);
+}
+
+.theme-dark .forum-thread-item-tracked-reference {
+    background-color: var(--main-darker);
+    border-color: var(--dark-gray);
+}
+.theme-dark .forum-thread-item-tracked-reference:hover {
+    border-color: var(--light-gray);
+}
+
+
+.theme-dark .action-button--outline {
+    border-color: var(--main-color);
+}
+.theme-dark .action-button--outline:hover {
+    border-color: var(--lighter-gray);
+}
 
 
 /* CHAT --------------------
