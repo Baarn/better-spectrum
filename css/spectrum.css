@@ -132,7 +132,7 @@
     background-color: var(--dark-gray);
 }
 .theme-dark .l-sidebar__footer {
-    background-color: var(--light-gray);
+    background-color: var(--dark-gray);
 }
 .theme-dark .c-sidebar-list-body::after {
     border: none;
@@ -201,6 +201,10 @@ aside.quick-access {
 
 /* COMMUNITY PAGE */
 
+.theme-dark #page-main .community-info {
+    border: none;
+}
+
 .theme-dark #app-content > #page.community > #page-main .community-list {
     background-color: var(--main-color);
 }
@@ -212,6 +216,15 @@ aside.quick-access {
     background-color: var(--light-gray);
 }
 
+
+#app-content > #page.community > #page-main .community-list ul .community-item .community-item-content {
+    margin: 5px 0px;
+    padding: 0px 5px 2px 10px;
+    background-color: var(--main-darker);
+}
+.theme-dark #app-content > #page.community > #page-main .community-list ul .community-item {
+    border: none;
+}
 
 
 /* BOARD VIEW
