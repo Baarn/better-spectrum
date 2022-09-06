@@ -265,6 +265,10 @@ aside.quick-access {
     background: var(--light-gray);
     color: var(--font-dark);
 }
+.theme-dark .forum-label:hover {
+    background: var(--lighter-gray);
+}
+
 .theme-dark #page.forum-channel .row .column.subject .subject-content a.thread-subject {
     color: var(--font-main);
 }
@@ -353,6 +357,13 @@ aside.quick-access {
     min-width: 40px;
 }
 
+
+.theme-dark #page.forum-channel .channel-header .actions .create {
+    background: var(--font-main);
+}
+.theme-dark #page.forum-channel .channel-header .actions .create:hover {
+    background: var(--font-dark);
+}
 
 
 /* make the vote buddon cute */
