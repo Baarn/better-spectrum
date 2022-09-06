@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name				Better Spectrum
-// @version				0.0.2
+// @version				0.0.3
 // @author				Baarn
 // @homepage			https://github.com/Baarn/better-spectrum
 // @update_url			https://raw.githubusercontent.com/Baarn/better-spectrum/main/better-spectrum.js
