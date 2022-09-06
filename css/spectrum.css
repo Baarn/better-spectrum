@@ -87,6 +87,23 @@
     fill: var(--font-main);
 }
 
+.theme-dark button.select {
+    background-color: var(--main-darker);
+    border-color: var(--dark-gray);
+}
+.theme-dark button.select.active {
+    background-color: var(--light-gray);
+    border-color: var(--dark-gray);
+}
+.theme-dark button.select:hover:not(.no-border) {
+    border-color: var(--light-gray);
+}
+.theme-dark button.select.active:hover:not(.no-border) {
+    border-color: var(--lighter-gray);
+}
+
+
+
 .nickname {
     font-family: Roboto,sans-serif;
     font-size: 1em;
@@ -495,6 +512,13 @@ button.vote.vertical {
 }
 
 
+.theme-dark .forum-thread-item .action, .theme-dark .forum-thread-item .forum-actions-button > .btn {
+    background-color: var(--main-darker);
+    border-color: var(--dark-gray);
+}
+.theme-dark .forum-thread-item .action:hover:not(.open), .theme-dark .forum-thread-item .forum-actions-button > .btn:hover:not(.open) {
+    border-color: var(--light-gray);
+}
 
 
 
