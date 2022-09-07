@@ -10,6 +10,9 @@ Grab Violentmonkey for
 [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/violentmonkey/) or
 [Chrome](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag?hl=en) (note that I've only tested with FF so far).
 
+It is also possible to copy and paste the css content directly into an extension like Stylus, but this wont auto-update.
+
+
 ## Installation:
 Open the Violentmonkey Dashboard by clicking on the cogwheel.
 
@@ -19,7 +22,7 @@ Click on the + at the top of the Dashboard and select "Install from URL".
 
 ![Install Script from URL](media/violentmonkey2.png?raw=true)
 
-Paste the [script URL](https://raw.githubusercontent.com/Baarn/better-spectrum/main/better-spectrum.js)(right click save) into the text box and press ok.
+Paste the [script URL](https://raw.githubusercontent.com/Baarn/better-spectrum/main/better-spectrum.js) (right click copy) into the text box and press ok.
 
 ![Paste Script](media/violentmonkey3.png?raw=true)
 
